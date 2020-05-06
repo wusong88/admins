@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # default
 
 ## Project setup
@@ -35,3 +36,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 	第二层：系统设置
 		第三层：系统权限 角色权限
 		
+=======
+# admins
+2020
+>>>>>>> ab19ac658cc36fc7b23d788fe78a4898d63cf787
