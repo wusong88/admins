@@ -1,0 +1,22 @@
+{
+  "name": "default",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "@weilan/el-tree-table": "^0.1.7",
+    "core-js": "^2.6.5",
+    "element-ui": "^2.13.1",
+    "vue": "^2.6.10",
+    "vxe-table": "^2.9.5",
+    "xe-utils": "^2.4.5"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
