@@ -5,7 +5,8 @@
 			<el-col :md="6" :lg="6" :xl="6" style="border-right:2px solid #e9e9e9;">
 				<div class="roleBox">
 					<el-header>角色列表</el-header>
-					<div class="btns">
+					
+					<div id="btn" class="btns">
 						<el-button type="primary" @click="dialogAddRole = true"><i class="el-icon-circle-plus-outline"></i> 新建</el-button>
 						<el-button type="primary" @click="dialogUpdateRole01"><i class="el-icon-circle-check"></i> 修改</el-button>
 						<el-button type="danger" @click="dialogDelRole = true"><i class="el-icon-remove-outline"></i> 删除</el-button>
@@ -14,6 +15,7 @@
 					  border
 					  ref="xTable1"
 					  :data="tableData"
+					  @click="fun01(item)"
 					  @checkbox-all="selectAllEvent"
 					  @checkbox-change="selectChangeEvent01">
 					  <vxe-table-column type="checkbox" width="40"></vxe-table-column>
@@ -42,7 +44,7 @@
 					</el-dialog>
 					<!-- 对话框：修改角色 -->
 					<el-dialog title="修改角色" width="30%" :visible.sync="dialogUpdateRole">
-					  <el-form label-width="80px" v-for="role in checkded01">
+					 <el-form label-width="80px" v-for="role in checkded01">
 					    <el-form-item label="角色名" >
 					      <el-input v-model="role.roleName"></el-input>
 					    </el-form-item>
@@ -108,7 +110,7 @@
 
 
 		</el-container>
-
+		
 	</div>
 </template>
 
@@ -256,6 +258,13 @@
 		},
 		
 		methods: {
+			hideDiv (){
+				$('#btn').hide()
+			},
+			fun01(){
+				alert(item.roleName);
+			},
+			
 			selectAllEvent ({ checked, records }) {
 			  console.log(checked ? '所有勾选事件' : '所有取消事件', records)
 			},

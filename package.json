@@ -8,9 +8,15 @@
   },
   "dependencies": {
     "@weilan/el-tree-table": "^0.1.7",
+    "axios": "^0.20.0",
     "core-js": "^2.6.5",
     "element-ui": "^2.13.1",
+    "qs.js": "^0.1.12",
+    "quill": "^1.3.7",
     "vue": "^2.6.10",
+    "vue-axios": "^2.1.5",
+    "vue-quill-editor": "^3.0.6",
+    "vue-router": "^3.4.3",
     "vxe-table": "^2.9.5",
     "xe-utils": "^2.4.5"
   },
