@@ -8,7 +8,7 @@
   },
   "dependencies": {
     "@weilan/el-tree-table": "^0.1.7",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "core-js": "^2.6.5",
     "element-ui": "^2.13.1",
     "qs.js": "^0.1.12",
